@@ -979,6 +979,62 @@ button:hover > .ico.play:before {
   z-index: 2;
 }
 
+/* FAQ */
+
+#faq {
+  margin-bottom: 10%;
+}
+
+#faq .collapse {
+  flex-direction: column;
+}
+
+.question {
+  border-bottom: 1px solid #d6d6d65e;
+  padding: 26px 0;
+  cursor: pointer;
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+.question h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.questions p {
+  margin-top: 18px;
+  opacity: 0.5;
+  max-width: 97%;
+  font-size: 14px;
+}
+
+.questions a {
+  display: inline-block;
+  color: #00e676;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.faqTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faqTitle svg {
+  transform: translateY(-3px);
+  transition: all 0.35s ease;
+}
+
+[aria-expanded="true"] svg {
+  fill: #00e676;
+  transform: translateY(-3px) rotate(180deg);
+}
+
 footer {
   display: flex;
   align-items: center;
