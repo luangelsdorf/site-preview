@@ -558,6 +558,26 @@ button:hover > .ico.play:before {
   position: relative;
 }
 
+#Preco .extra {
+  background-color: #33363b;
+  margin: 0;
+  padding: 18px 8px 32px;
+  border-top: 1px solid #00e676;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.card-heading {
+  padding: 24px 24px 0;
+}
+
+.plan-features-list-mensal {
+  padding: 0 24px;
+}
+
+
 #Preco:after {
   content: "";
   display: block;
@@ -641,7 +661,8 @@ button:hover > .ico.play:before {
   margin: 3px 0px;
 }
 
-.card-dark .plan-features-list h4 {
+.card-dark .plan-features-list h4,
+.card-dark .plan-features-list-mensal h4 {
   position: relative;
   text-align: left;
   font-size: 15px;
@@ -691,7 +712,7 @@ button:hover > .ico.play:before {
   font-size: 14px;
 }
 .card-dark .plan-dark-subdescription {
-  color: #fff;
+  color: #00e676;
   font-size: 14px;
   width: 100%;
   display: block;
@@ -995,6 +1016,10 @@ button:hover > .ico.play:before {
   cursor: pointer;
 }
 
+.question .show {
+  display: block !important;
+}
+
 .question:last-child {
   border-bottom: none;
 }
@@ -1003,13 +1028,30 @@ button:hover > .ico.play:before {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 0;
+  max-width: 90%;
+}
+
+.question li {
+  font-size: 14px;
+  opacity: 0.5;
+  list-style: circle;
 }
 
 .questions p {
   margin-top: 18px;
-  opacity: 0.5;
-  max-width: 97%;
   font-size: 14px;
+  max-width: 97%;
+  color: #a8a8a8
+}
+
+@media (max-width: 992px) {
+  .questions p {
+    max-width: 90%;
+  }
+}
+
+.questions p a {
+  opacity: 1;
 }
 
 .questions a {
